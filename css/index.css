@@ -1,0 +1,164 @@
+html,body{
+	height: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(../imgs/bg.png);
+	background-color: #C7B3E5; 
+	font-size: 14px;
+	color: #444;
+}
+li{
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.container{
+	padding: 2% 10%;
+}
+
+
+header{
+	
+}
+.logo{
+	display: block;
+	width: 35%;
+	min-width: 200px;
+}
+.logo img{
+	width: 100%;
+}
+
+header .intro{
+	padding-left: 10%;
+	color: #fff;
+	margin-top: -10px;
+}
+
+.nav{
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.nav li{
+	padding: 1.5% 5%;
+}
+.nav li.active{
+	background-image: url(../imgs/bg.png);
+	background-color: #C7B3E5; 
+	border-bottom: 3px solid #ae95d4;
+	color: #fff;
+}
+.tags{
+	margin-top: 1%;
+	display: -webkit-flex;
+}
+.tags li{
+	font-size: 14px;
+	margin-left: 2%;
+	padding: 5px 10px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.list{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+.item{
+	width: 32%;
+	position: relative;
+	margin-top: 1%;
+}
+.item img{
+	width: 100%;
+	display: block;
+}
+.item .title{
+	color: #ae95d4;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 2% 0;
+	text-align: center;
+	background-color: rgba(0,0,0,.3);
+}
+.item .desc{
+	font-size: 12px;
+	color: #999;
+	margin-top: 1%;
+}
+
+.detail-wrap{
+	max-width: 640px;
+	margin: 10px auto;
+}
+.detail-wrap .title{
+	font-size: 24px;
+	font-weight: 400;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+.detail-wrap .date{
+	color: #666;
+	font-size: 12px;
+	margin: 5px 0;
+}
+.detail-wrap .content{
+	margin-top: 15px;
+}
+.content img{
+	max-width: 100%;
+}
+.page-navs{
+	margin-top: 20px;
+	font-size: 16px;
+}
+.page-navs a{
+	text-decoration: underline;
+}
+.page-prev,.page-next{
+	margin-top: 5px;
+}
+.page-prev a:hover,.page-next a:hover{
+	color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+	.container{
+		padding: 2% 5%;
+	}
+	.nav{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container{
+		padding: 2% 5%;
+	}
+	.nav{
+		font-size: 16px;
+	}
+	.item{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
